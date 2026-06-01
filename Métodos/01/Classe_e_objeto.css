@@ -1,0 +1,30 @@
+  
+        body { font-family: sans-serif; 
+            background: #222; 
+            color: #fff; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        .caixa { 
+            background: #333; 
+            padding: 15px; 
+            border-radius: 8px; 
+            max-width: 400px; 
+            margin: 20px auto; 
+            text-align: left;
+         }
+        input, select, button { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 8px 0; 
+            border-radius: 4px; 
+            border: none; 
+            box-sizing: border-box; 
+        }
+        button { 
+            background: #00bcd4; 
+            color: white; 
+            font-weight: bold; 
+            cursor: pointer; 
+        }
+    
