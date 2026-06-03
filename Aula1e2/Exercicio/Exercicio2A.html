@@ -13,10 +13,16 @@ que for chamado. Complete a função JavaScript do botão para atualizar a tela.
 <body>
     <h2>Exercício 2B: Pontuação do Score</h2>
     <p>Pontos do Jogador: <strong id="txtPontos">0</strong></p>
-    <button onclick="ganharPontos()">Eliminar Monstro (+10 pts)</button>
+    <button onclick="jogo.ganharPontos()">Eliminar Monstro (+10 pts)</button>
 
     <script>
-        
+        const jogo = {
+            pontos: 0,
+            ganharPontos: function(){
+                this.pontos += 10
+                document.getElementById('txtPontos').innerHTML = this.pontos
+            },
+        };
         
     </script>
 </body>
