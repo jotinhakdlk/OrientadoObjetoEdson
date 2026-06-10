@@ -1,0 +1,28 @@
+<!--
+Aula 8A: Velocímetro Limitado (Definindo Limitações Máximas no Estado)
+O que vamos aprender: Como limitar os valores de um objeto usando propriedades de controle 
+para que os dados não ultrapassem limites preestabelecidos na vida real (como limites de 
+velocidade ou capacidades).
+O que o código faz: Criamos o objeto veiculo com a velocidade atual em 0 e uma propriedade 
+de controle limiteMaximo valendo 60. O método acelerar adiciona de 20 em 20 km/h, mas com 
+uma trava: se a nova velocidade for passar de 60, o método fixa o valor exatamente em 60 
+e avisa o motorista na tela que o limite da via foi atingido.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>8A - Fazer Junto: Velocidade</title>
+</head>
+<body>
+    <h2>Exemplo 8A: Velocímetro Limitado</h2>
+    <p>Velocidade Atual: <span id="txtVel">0</span> km/h</p>
+    <button onclick="correr()">Acelerar</button>
+    <p id="msgLimite" style="color: orange;"></p>
+
+    <script>
+        
+    </script>
+</body>
+</html>

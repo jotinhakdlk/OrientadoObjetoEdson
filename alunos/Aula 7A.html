@@ -1,0 +1,30 @@
+<!--
+Aula 7A: Cadastro de Produto (Atribuindo Inputs a Propriedades Textuais)
+O que vamos aprender: Como atualizar as propriedades de texto de um objeto em tempo de 
+execução usando os dados digitados nos formulários do HTML.
+O que o código faz: Criamos um objeto produto com as propriedades nome e preco inicialmente 
+vazias. Quando o usuário preenche o formulário e clica em "Salvar", a função JavaScript 
+captura os textos dos inputs e os atribui diretamente às propriedades do objeto. Em seguida, 
+o método obterLinhaEtiqueta formata esses novos dados com letras maiúsculas e exibe uma 
+etiqueta de preço estilizada.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>7A - Fazer Junto: Produto</title>
+</head>
+<body>
+    <h2>Exemplo 7A: Gerador de Etiqueta</h2>
+    <input type="text" id="nomeProd" placeholder="Nome do Produto"><br><br>
+    <input type="number" id="precoProd" placeholder="Preço do Produto"><br><br>
+    <button onclick="gerarEtiqueta()">Salvar no Objeto e Exibir</button>
+    
+    <p id="txtEtiqueta" style="border: 1px dashed black; padding: 10px; width: 200px; display:none;"></p>
+
+    <script>
+        
+    </script>
+</body>
+</html>

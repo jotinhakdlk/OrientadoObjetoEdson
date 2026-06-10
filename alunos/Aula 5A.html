@@ -1,0 +1,37 @@
+<!--
+Aula 5A: Caixa Eletrônico - Depósito (Métodos que Recebem Parâmetros)
+O que vamos aprender: Como enviar um valor de fora do objeto (neste caso, digitado 
+pelo usuário em um campo de texto/input) para dentro de um método através de 
+parâmetros.
+Criaremos o objeto conta com um saldo inicial de 100. O método 
+depositar(valor) foi programado para receber uma quantia desconhecida por parâmetro. 
+Quando o usuário digita um número no input e clica no botão, o JavaScript pega esse 
+valor e o envia para dentro do método, que soma o dinheiro ao saldo atual da conta.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>5A - Fazer Junto: Depósito</title>
+</head>
+<body>
+    <h2>Exemplo 5A: Conta Bancária (Depósito)</h2>
+    <p>Saldo: R$ <span id="txtSaldo">100</span></p>
+    
+    <input type="number" id="valDeposito" placeholder="Digite o valor">
+    <button onclick="executarDeposito()">Depositar</button>
+
+    <script>
+        const conta = {
+            saldo: 100,
+            depositar: function(valor){
+                this.saldo
+            }
+        };
+
+        function executarDeposito(){
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+Baseado no exemplo do Usuário que acabamos de fazer, crie um objeto chamado 
+pet com as propriedades nome e raca. Crie um método chamado emitirSom que 
+retorne a frase "[nome] diz: Au Au!". Complete a função fazerBarulho() 
+para exibir essa frase na tela.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>1B - Exercício: Pet</title>
+</head>
+<body>
+    <h2>Exercício 1B: Seu Pet</h2>
+    <button onclick="fazerBarulho()">Ouvir Pet</button>
+    <p id="resposta1B">O pet está quieto...</p>
+
+    <script>
+        const pet={
+            nome:"Thor",
+            raca: "Vira-lata",
+            emitirSom:function(){
+                return this.nome+ "diz: au au!";
+            }
+        };
+        function fazerBarulho(){
+            document.getElementById("resposta1B").innerHTML = pet.emitirSom();
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--
+Aula 6A: Caixa Eletrônico - Saque (Condicionais dentro de Métodos)
+O que vamos aprender: Como aplicar regras de negócio e validações (if/else) dentro 
+dos métodos para proteger os dados do objeto contra ações inválidas.
+O que o código faz: Criamos o objeto contaBancaria com saldo igual a 80. Criamos 
+o método sacar(valor). Antes de diminuir o dinheiro, o método faz uma checagem: 
+se o valor solicitado for menor ou igual ao saldo disponível, o saque é autorizado 
+e o saldo diminui; caso contrário, a operação é bloqueada e o método retorna uma 
+mensagem de erro ("Saldo insuficiente").
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>6A - Fazer Junto: Saque</title>
+</head>
+<body>
+    <h2>Exemplo 6A: Conta Bancária (Saque com Validação)</h2>
+    <p>Saldo Disponível: R$ <span id="txtSaldoCaixa">80</span></p>
+
+    <input type="number" id="valSaque" placeholder="Valor do saque">
+    <button onclick="executarSaque()">Sacar</button>
+    <p id="msgErro" style="color: red;"></p>
+
+    <script>
+       
+    </script>
+</body>
+</html>

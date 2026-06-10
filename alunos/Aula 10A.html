@@ -1,0 +1,28 @@
+<!--
+Aula 10A: Boletim Escolar (Métodos que Chamam Outros Métodos Internos)
+O que vamos aprender: Como estruturar objetos de forma avançada, fazendo com que um método 
+interno chame outro método do próprio objeto para reaproveitar códigos e cálculos.
+O que o código faz: Criamos o objeto boletim com as notas n1 e n2. Ele possui o método 
+calcularMedia(), que apenas faz a conta matemática e retorna o valor. Também possui o método 
+obterSituacao(), que precisa saber a média para decidir se o aluno foi aprovado ou reprovado. 
+Em vez de refazer a conta da média, o método obterSituacao roda a instrução this.calcularMedia() 
+para aproveitar o cálculo pronto do método vizinho.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>10A - Fazer Junto: Notas</title>
+</head>
+<body>
+    <h2>Exemplo 10A: Boletim Escolar O.O.</h2>
+    <p>Nota 1: 8.0 | Nota 2: 5.0</p>
+    <button onclick="verificarBoletim()">Ver Resultado</button>
+    <p id="txtResultado">Status: ---</p>
+
+    <script>
+        
+    </script>
+</body>
+</html>

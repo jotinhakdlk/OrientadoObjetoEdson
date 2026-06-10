@@ -1,0 +1,37 @@
+<!--
+Aula 1A: 
+O Objeto Usuário (Introdução a Propriedades e Métodos)
+O que vamos aprender: Como criar um objeto literal no JavaScript 
+para agrupar informações relacionadas e como acessar essas informações 
+na tela através de um método simples.
+Iremos criar um objeto chamado usuario que guarda os 
+dados de uma pessoa (nome e cargo). Dentro dele, criaremos uma função 
+interna (chamada de método) que junta esses dados em uma frase de boas-vindas. 
+Quando o usuário clica no botão "Acessar Sistema", o JavaScript chama esse método 
+e exibe a mensagem na tela.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>1A - Fazer Junto: Usuário</title>
+</head>
+<body>
+    <h2>Exemplo 1A: Objeto Usuário</h2>
+    <button onclick="mostrarSaudacao()">Acessar Sistema</button>
+    <p id="resposta1A">Clique no botão...</p>
+
+    <script>
+        // Criando o objeto com propriedades e um método
+        const usuario = {
+            nome: "Carlos Silva",
+            cargo: "Professor",
+            saudar: function(){
+                return"Bem-vindo de volta,"+this.nome+"("+ this.cargo+")!";
+            }};
+        function mostrarSaudacao(){
+            document.getElementById("resposta1A").innerHTML = usuario.saudar();}
+         </script>
+</body>
+</html>

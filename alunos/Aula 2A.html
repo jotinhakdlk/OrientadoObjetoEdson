@@ -1,0 +1,36 @@
+<!--
+Aula 2A: Contador de Cliques (Modificando Propriedades Internas)
+O que vamos aprender: Como um método pode alterar uma informação que está 
+guardada dentro do próprio objeto usando a palavra-chave this.
+O que o código faz: Criamos um objeto contador com uma propriedade numérica 
+chamada quantidade, que começa valendo 0. Criamos o método incrementar, 
+que usa a instrução this.quantidade++ para somar 1 ao valor atual toda vez 
+que o botão for clicado. O valor atualizado é renderizado dinamicamente na tela.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>2A - Fazer Junto: Contador</title>
+</head>
+<body>
+    <h2>Exemplo 2A: Contador de Cliques</h2>
+    <p>Total de Cliques: <strong id="txtCliques">0</strong></p>
+    <button onclick="clicouNoBotao()">Contar Clique</button>
+
+    <script>
+        const contador = {
+            quantidade: 0,
+            incrementar: function() {
+                this.quantidade++; // Altera o valor interno
+            }
+        };
+
+        function clicouNoBotao() {
+            contador.incrementar();
+            document.getElementById("txtCliques").innerText = contador.quantidade;
+        }
+    </script>
+</body>
+</html>

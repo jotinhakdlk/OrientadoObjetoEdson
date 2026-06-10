@@ -1,0 +1,27 @@
+<!--
+Aula 9A: Item Único no Carrinho (Interrelação de Múltiplos Métodos)
+O que vamos aprender: Como criar múltiplos métodos dentro de um mesmo objeto que interagem, 
+alteram e dependem da mesma propriedade interna.
+O que o código faz: Criamos o objeto item para simular uma linha de um carrinho de compras. 
+Ele possui a propriedade quantidade controlada por dois botões distintos no HTML: o botão 
++ aciona o método adicionar() (que soma 1), e o botão - aciona o método remover() 
+(que subtrai 1, contendo uma trava para nunca permitir quantidades negativas de produtos).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>9A - Fazer Junto: Carrinho</title>
+</head>
+<body>
+    <h2>Exemplo 9A: Item Único no Carrinho</h2>
+    <p>Quantidade de Camisetas: <strong id="qtdCamiseta">0</strong></p>
+    <button onclick="adicionarCamiseta()">+</button>
+    <button onclick="removerCamiseta()">-</button>
+
+    <script>
+       
+    </script>
+</body>
+</html>
