@@ -18,7 +18,18 @@ do seu objeto.
     <button onclick="executarAbastecimento()">Abastecer</button>
 
     <script>
-       
+       const carro = {
+        combustivel: 20,
+        adicionarGasolina: function (litros){
+            this.combustivel += litros
+        }
+       };
+
+       function executarAbastecimento(){
+            let inputGasolina = Number(document.getElementById("valGasolina").value);
+            carro.adicionarGasolina(inputGasolina);
+            document.getElementById("txtGasolina").innerHTML = carro.combustivel;
+       }
     </script>
 </body>
 </html>
