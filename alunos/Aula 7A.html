@@ -24,7 +24,21 @@ etiqueta de preço estilizada.
     <p id="txtEtiqueta" style="border: 1px dashed black; padding: 10px; width: 200px; display:none;"></p>
 
     <script>
-        
+        const produto = {
+            nome: "",
+            preco: 0,
+            obterLinhaEtiqueta: function(){
+                return "PRODUTO: " + this.nome.toUpperCase() + "<br> PREÇO: R$" + Number(this.preco).toFixed(2);
+            }
+        };
+
+        function gerarEtiqueta(){
+            produto.nome = document.getElementById("nomeProd").value;
+            produto.preco = document.getElementById("precoProd").value;
+            let container = document.getElementById("txtEtiqueta");
+            container.style.display = "block";
+            container.innerHTML = produto.obterLinhaEtiqueta();
+        }
     </script>
 </body>
 </html>

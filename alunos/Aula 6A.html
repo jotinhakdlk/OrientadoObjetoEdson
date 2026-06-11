@@ -25,15 +25,22 @@ mensagem de erro ("Saldo insuficiente").
     <script>
        const contaBancaria = {
         saldo: 80,
-        sacar: function(){
-            if(valor <= this.valor){
+        sacar: function(valor){
+            if(valor < this.saldo){
                 this.saldo -= valor;
-                return "Saque realizado!"
+                return "Saque realizado!";
             }else{
-                return "Saldo insuficiente"
-            }
+                return "Saldo insuficiente";
+            };
         }
-       }
+       };
+
+        function executarSaque(){
+            let valorSaque = Number(document.getElementById("valSaque").value);
+            let mensagem = contaBancaria.sacar(valorSaque);
+            document.getElementById("txtSaldoCaixa").innerHTML = contaBancaria.saldo;
+            document.getElementById("msgErro").innerHTML = mensagem;
+        };
     </script>
 </body>
 </html>
