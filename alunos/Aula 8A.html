@@ -22,7 +22,22 @@ e avisa o motorista na tela que o limite da via foi atingido.
     <p id="msgLimite" style="color: orange;"></p>
 
     <script>
-        
+        const veiculo = {
+            velocidade: 0,
+            limiteMaximo: 60,
+            incrementarVel: function(){
+                this.velocidade += 20
+            }
+        };
+
+        function correr(){
+            if(veiculo.velocidade >= veiculo.limiteMaximo){
+                document.getElementById("msgLimite").innerHTML = "Já está na velocidade máxima!";
+            } else{
+            veiculo.incrementarVel();
+            document.getElementById("txtVel").innerHTML = veiculo.velocidade;
+        };
+        };
     </script>
 </body>
 </html>
